@@ -1,7 +1,17 @@
 ruby_samples
 ============
 
-Sample from ruby quizzes
+Time Window problem
+-------------------------------
+
+Ruby class which can tell you whether the current time (or any given time) is within a particular "time window." 
+
+Time windows are defined by strings in the following format:
+* 0700-0900  means every day between these times
+
+* Sat Sun means all day Sat and Sun, no other times
+
+Time ranges should exclude the upper bound, i.e. 0700-0900 is 07:00:00 to 08:59:59. An empty time window means "all times everyday". 
 
 
 Reducer solution for Ruby Code quiz
