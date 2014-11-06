@@ -9,7 +9,7 @@ end
 # consonant is any letter other than A, E, I, O, U.) NOTE: be sure it works for 
 # both upper and lower case and for nonletters!
 def starts_with_consonant?(s)
-	/^[^aeiou]/i.match(s)
+	/^[^aeiou\W]/i.match(s)
 end
 
 # raise "Carlos" unless starts_with_consonant? "Carlos"
@@ -22,5 +22,5 @@ end
 # that is a multiple of 4. NOTE: be sure it returns false if the string is not
 # a valid binary number!
 def binary_multiple_of_4?(s)
-	/(0|1)+00$/i.match(s)
+	/(^[10]*00$)|(^0)/i.match(s)
 end
